@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Lichess LIFBA Theme",
+  "version": "0.1",
+
+  "description": "Fancy board animation theme for Lichess",
+
+	"icons": {
+		"48": "icon.png"
+	},
+
+  "content_scripts": [
+    {
+      "matches": ["https://lichess.org/*"],
+			"css": ["lifba.css"],
+			"js": ["lifba.js"]
+    }
+  ],
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "lifba@sarchreato.org"
+		}
+	}
+}

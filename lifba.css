@@ -1,0 +1,75 @@
+@keyframes pm {
+  from {
+    opacity: 0.5;
+  }
+  
+  to {
+    opacity: 1.0
+  }
+}
+
+@keyframes lm {
+  0% {background-position:11% 0%}
+  50% {background-position:90% 100%}
+  100% {background-position:11% 0%}
+}
+
+.last-move {
+	border: 3px groove #4488ff;
+  background: linear-gradient(320deg, #246d9f, #2b2d2c);
+  background-size: 200%;
+  animation: lm;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+	opacity: 0.8;
+}
+
+.dragging {
+	border: 3px groove #4488ff;
+}
+
+square.selected {
+	border: 3px groove #ff8844;
+  background: linear-gradient(40deg, #336633, #112200);
+  background-size: 200%;
+  animation: lm;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.move-dest {
+	border: 3px groove #ff8844;
+	background: radial-gradient(#ff8844 19%, #00000000 20%) !important;
+}
+
+.current-premove {
+	border: 3px groove #44ff88;
+  background: linear-gradient(320deg, #141e55, #0a0008);
+  background-size: 200%;
+  animation-name: lm;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+	opacity: 0.8;
+}
+
+.premove-dest {
+	border: 3px groove #44ff88;
+	background: radial-gradient(#44ff88 19%, #00000000 20%) !important;
+}
+
+.check {
+	border: 3px groove #aa4422;
+	background-image: linear-gradient(320deg, #992211, #330000) !important;
+	background-size: 200% !important;
+	animation-name: lm;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.anim {
+  animation-name: pm;
+  animation-duration: 1s;
+  border-image: linear-gradient(#1133aa, #ffffff) 15;
+  border-width: 2px;
+  border-style: solid;
+}
